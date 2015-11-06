@@ -30,6 +30,7 @@ for (i in 3:9)
 # create the graph and export it to png  
 
 png(file="plot3.png",width = 480,height = 480)
+par(bg=NA)
 plot(db$Sub_metering_1,type="l",ann=F,axes=F,ylim = range(0,40),col="black")
 lines(db$Sub_metering_2,type="l",col="red")
 lines(db$Sub_metering_3,type="l",col="blue")

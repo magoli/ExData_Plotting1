@@ -33,7 +33,7 @@ for (i in 3:9)
 png(file="plot4.png",width = 480,height = 480)
 
 mar=c(2,1,2,1)
-par(mfcol=c(2,2))
+par(mfcol=c(2,2),bg=NA)
 
 plot(db$Global_active_power,type="l",ann=F,axes=F)
 axis(1, at=c(0,1440,2880), lab=c("Thu", "Fri","Sat"))

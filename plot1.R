@@ -29,6 +29,7 @@ for (i in 3:9)
 # create the graph and export it to png  
 
 png(file="plot1.png",width = 480,height = 480)
+par(bg=NA)
 hist(db$Global_active_power,col="red",main = "Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off()
 
