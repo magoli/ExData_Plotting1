@@ -32,12 +32,13 @@ for (i in 3:9)
 
 png(file="plot4.png",width = 480,height = 480)
 
+mar=c(2,1,2,1)
 par(mfcol=c(2,2))
 
 plot(db$Global_active_power,type="l",ann=F,axes=F)
 axis(1, at=c(0,1440,2880), lab=c("Thu", "Fri","Sat"))
 axis(2, at=c(0,2,4,6), lab=c("0", "2","4","6"))
-title(ylab="Global Active Power (kilowatts)")
+title(ylab="Global Active Power")
 box()
 
 plot(db$Sub_metering_1,type="l",ann=F,axes=F,ylim = range(0,40),col="black")
